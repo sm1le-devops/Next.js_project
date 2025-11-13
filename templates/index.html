@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Портфолио — Medior Web Developer</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <div id="app" class="page">
+        <aside class="left-panel">
+            <div class="photo-wrap">
+                <img id="profile-photo" src="/static/img/profile.jpg" alt="Моё фото">
+                <div class="photo-overlay"></div>
+            </div>
+            <div class="left-deco"></div>
+        </aside>
+
+
+        <main class="right-panel">
+            <header class="top-row">
+                <div>
+                    <h1 id="name">Имя Фамилия</h1>
+                    <p class="role"><span id="role">Medior Web Developer</span></p>
+                </div>
+                <div class="controls">
+                    <button id="theme-toggle" aria-label="Переключить тему">🌓</button>
+                </div>
+            </header>
+
+
+            <section class="intro">
+                <p id="intro-text">Привет! Я medior web developer — делаю красивые и быстрые веб-приложения. Ниже — мои
+                    навыки и контакты.</p>
+                <div class="actions">
+                    <a id="download-cv" href="#" class="btn">Скачать CV</a>
+                    <a id="contact-me" href="#contact" class="btn ghost">Связаться</a>
+                </div>
+            </section>
+
+
+            <section class="skills">
+                <h2>Навыки</h2>
+                <div id="skills-list" class="skills-list"></div>
+            </section>
+
+
+            <section id="contact" class="contact">
+                <h2>Контакты</h2>
+                <form id="contact-form">
+                    <input name="name" placeholder="Имя" required />
+                    <input name="email" placeholder="Email" type="email" required />
+                    <textarea name="message" placeholder="Сообщение" required></textarea>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+                <div id="form-result" role="status"></div>
+            </section>
+
+
+            <footer class="page-footer">© <span id="year"></span> — Портфолио</footer>
+        </main>
+    </div>
+
+
+    <script src="/static/js/app.js"></script>
+</body>
+
+</html>
